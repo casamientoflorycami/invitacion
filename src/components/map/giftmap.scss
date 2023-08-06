@@ -1,0 +1,12 @@
+.gift-map {
+  display: flex;
+  flex-direction: column;
+  background-color: #331D03;
+  margin: 10px 10px 30px 10px;
+  width: 370px !important;
+  border-radius: 30px;
+
+  .map {
+    margin: 0 auto 30px;
+  }
+}

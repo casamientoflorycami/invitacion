@@ -1,0 +1,117 @@
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #07231a;
+  margin: 10px 10px 30px 10px;
+  width: 370px !important;
+  border-radius: 30px;
+
+  .image {
+    margin: 30px 30px 15px 30px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    width: 280px;
+
+    .label {
+      margin: 0;
+      width: 200px;
+    }
+
+    label {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 10px;
+      font-size: 18px;
+      font-weight: 100 !important;
+      color: #f2f2f2;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="tel"],
+    textarea {
+      width: 260px;
+      margin-top: 7px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+      color: #333;
+      background-color: #f5f5f5;
+
+      &:focus {
+        outline: none;
+        border-color: #4caf50;
+        background-color: #fff;
+      }
+    }
+    .invitado-container {
+      display: flex;
+      .invitado {
+        margin-top: 10px !important;
+      }
+    }
+
+    textarea {
+      height: 100px;
+    }
+
+    .btn {
+      background-color: #ea8ca2;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #dc7f94;
+      }
+
+      &-add {
+        border: 1px solid #4aa73e;
+        background-color: transparent;
+        margin-top: 8px;
+
+        &:hover {
+          background-color: #4aa73e;
+        }
+      }
+
+      &-remove {
+        padding: 0;
+        padding-left: 10px;
+        border-radius: 0;
+        color: #ff5f5f;
+        background-color: transparent;
+        margin-top: 8px;
+
+        &:hover {
+          background-color: transparent;
+        }
+      }
+
+      &-submit {
+        margin-bottom: 10px;
+      }
+
+      &-submitted {
+        background-color: #8d8d8d;
+        pointer-events: none;
+        margin-bottom: 10px;
+      }
+    }
+
+    .btn-container {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
